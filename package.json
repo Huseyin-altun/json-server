@@ -1,12 +1,16 @@
 {
-  "name": "json-server-vercel",
+  "name": "template-json-server",
   "version": "1.0.0",
   "description": "Deploy JSON Server to Vercel",
-  "main": "api/server.js",
+  "main": "server.js",
+  "license": "MIT",
   "scripts": {
-    "start": "node api/server.js"
+    "dev": "NODE_ENV=development node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "watch": "json-server db.json --port=8000"
   },
   "dependencies": {
-    "json-server": "^0.17.0"
+    "clone": "^2.1.2",
+    "json-server": "^0.17.1"
   }
 }

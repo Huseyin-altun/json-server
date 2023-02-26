@@ -1,8 +1,8 @@
 const jsonServer = require('json-server')
 const clone = require('clone')
-const data = require('../db.json')
+const data = require('./db.json')
 
-const isProductionEnv = true;
+const isProductionEnv = process.env.NODE_ENV === 'production';
 const server = jsonServer.create()
 
 // For mocking the POST request, POST request won't make any changes to the DB in production environment
@@ -20,7 +20,7 @@ server.use((req, res, next) => {
 })
 
 server.use(router)
-server.listen(8000, () => {
+server.listen(process.env.PORT || 8000, () => {
     console.log('JSON Server is running')
 })
 
