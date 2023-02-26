@@ -1,20 +1,12 @@
 {
-  "name": "rtk-query-sample",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "json-server-vercel",
+  "version": "1.0.0",
+  "description": "Deploy JSON Server to Vercel",
+  "main": "api/server.js",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "start": "node api/server.js"
   },
   "dependencies": {
-
-    "json-server": "^0.17.1"
-   
-  },
-  "devDependencies": {
-  
-   
+    "json-server": "^0.17.0"
   }
 }
