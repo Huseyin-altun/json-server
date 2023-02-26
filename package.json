@@ -1,0 +1,20 @@
+{
+  "name": "rtk-query-sample",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+
+    "json-server": "^0.17.1"
+   
+  },
+  "devDependencies": {
+  
+   
+  }
+}
